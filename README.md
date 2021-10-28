@@ -4,7 +4,12 @@
 
 This is a trivial overview of how to originate and mint an FA2 contract.
 
-The sh scripts operate inthe `smart-contracts` submodule, so you will need to do a `submodule init`.  In any case they are not necessary for running the python script.
+The sh scripts operate in the `smart-contracts` submodule, which needs to be initialized in order to compile the contract and storage.  In any case they are not necessary for running the python script.
+
+```sh
+git submodule init
+git submodule update
+```
 
 The initialize in the script has already been run--so if you want to mint more tokens, you'll need to modify the script.
 
