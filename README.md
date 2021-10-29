@@ -4,7 +4,7 @@
 
 This is a trivial overview of how to originate and mint an FA2 contract.
 
-The sh scripts operate in the `smart-contracts` submodule, which needs to be initialized in order to compile the contract and storage.  In any case they are not necessary for running the python script.
+The sh scripts operate in the `smart-contracts` submodule, which needs to be initialized in order to compile the smart contracts.  In any case they are not necessary for running the python script.
 
 ```sh
 git submodule init
@@ -17,7 +17,11 @@ Any questions please contact `john.newby[at]tzconnect.com`
 
 ## How to use.
 
-First install pytezos, however you wish.
+###### Install Tezos Client
+https://assets.tqtezos.com/docs/setup/1-tezos-client/
+
+###### Install PyTezos
+https://pytezos.org/quick_start.html
 
 The following is a transcript of the REPL session which I used to set up this contract.
 
@@ -36,4 +40,10 @@ many lines omitted
 7'}]}, 'big_map_diff': [{'action': 'update', 'big_map': '88096', 'key_hash': 'exprutQkbiKNaV5aj1k6i3mtoReS8W6xBgUFYENQqfdrCixmMc4dMG', 'key': {'int': '49'}, 'value': {'int': '1'}}, {'action': 'update', 'big_map': '88093', 'key_hash': 'exprtXVhQBoBX8fbp7EaDHp3kLbPX3mGEatCQeHWTvYFNzby998qZ6', 'key': {'prim': 'Pair', 'args': [{'bytes': '000042e8795f422a2e5fd11fd3b2eab6fe3f6255455a'}, {'int': '49'}]}, 'value': {'int': '1'}}], 'balance_updates': [{'kind': 'contract', 'contract': 'tz1RjonN5qEJM8cZhKcfGyoEqhw1FNB4ti6w', 'change': '-16750', 'origin': 'block'}], 'consumed_gas': '36451', 'consumed_milligas': '36450188', 'storage_size': '20240', 'paid_storage_size_diff': '67', 'lazy_storage_diff': [{'kind': 'big_map', 'id': '88097', 'diff': {'action': 'update', 'updates': []}}, {'kind': 'big_map', 'id': '88096', 'diff': {'action': 'update', 'updates': [{'key_hash': 'exprutQkbiKNaV5aj1k6i3mtoReS8W6xBgUFYENQqfdrCixmMc4dMG', 'key': {'int': '49'}, 'value': {'int': '1'}}]}}, {'kind': 'big_map', 'id': '88095', 'diff': {'action': 'update', 'updates': []}}, {'kind': 'big_map', 'id': '88094', 'diff': {'action': 'update', 'updates': []}}, {'kind': 'big_map', 'id': '88093', 'diff': {'action': 'update', 'updates': [{'key_hash': 'exprtXVhQBoBX8fbp7EaDHp3kLbPX3mGEatCQeHWTvYFNzby998qZ6', 'key': {'prim': 'Pair', 'args': [{'bytes': '000042e8795f422a2e5fd11fd3b2eab6fe3f6255455a'}, {'int': '49'}]}, 'value': {'int': '1'}}]}}]}}}], 'signature': 'signYmHpVicz95pN78VQKndvDLB5qjyyWTS3okDxCiqS72vrPp3u82woEFMDMM9yVVMgLLzjsLzeK3pNX78Muy3CkKzY1ZjM'}
 >>> fa2.transfer(1, "tz1RjonN5qEJM8cZhKcfGyoEqhw1FNB4ti6w")
 >>>
+```
+## Setting up a Sandbox
+If you wish do test locally, please ensure docker is installed and you can run the following to bootstrap a local tezos node.
+
+```
+./init-sandbox.sh
 ```

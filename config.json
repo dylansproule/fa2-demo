@@ -1,0 +1,14 @@
+{
+  "rpc": {
+    "shell_rpc": "http://florence.newby.org:8732",
+    "contract_id": "KT1XtDdQcB6WCtnUsv8Da7fRNVN7teMunsvS",
+    "owner_address": "tz1RjonN5qEJM8cZhKcfGyoEqhw1FNB4ti6w",
+    "owner_private_key": "edsk4LzAuuQF1FkFHV5qXmpL8a5YNtJh1pTtkAYjAVBKCSAbp6LCCD"
+  },
+  "sandbox_rpc": {
+    "shell_rpc": "http://localhost:20000",
+    "contract_id": "KT1BgcBFadogzaH4aLpdPiGDzenZ7DWHqsG4",
+    "owner_address": "tz1aSkwEot3L2kmUvcoxzjMomb9mvBNuzFK6",
+    "owner_private_key": "edsk3RFfvaFaxbHx8BMtEW1rKQcPtDML3LXjNqMNLCzC3wLC1bWbAt"
+  }
+}
