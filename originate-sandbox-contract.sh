@@ -1,10 +1,16 @@
 #!/bin/sh
-
+source bash_config.sh
 cd smart-contracts
 
 contract_name="fa2-sandbox"
-burn_cap=1.6375
-transfer_amount=0
 account_owner_name="bob"
+storage_init="$(cat $storage_out)"
 
-tezos-client originate contract $contract_name transferring $transfer_amount from $account_owner_name running fa2.tz --init "`cat storage.tz`" --burn-cap $burn_cap --force
+# Force originate sandbox contract for testing iterations
+tezos-client originate contract $contract_name \
+  transferring $transfer_amount \
+  from $account_owner_name \
+  running $contract_out \
+  --init "$storage_init" \
+  --burn-cap $burn_cap \
+  --force

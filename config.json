@@ -7,7 +7,7 @@
   },
   "sandbox_rpc": {
     "shell_rpc": "http://localhost:20000",
-    "contract_id": "KT1BgcBFadogzaH4aLpdPiGDzenZ7DWHqsG4",
+    "contract_id": "KT1SBLpD2AbbS1UMtw2QtB7aVzmB2HHQr1rF",
     "owner_address": "tz1aSkwEot3L2kmUvcoxzjMomb9mvBNuzFK6",
     "owner_private_key": "edsk3RFfvaFaxbHx8BMtEW1rKQcPtDML3LXjNqMNLCzC3wLC1bWbAt"
   }

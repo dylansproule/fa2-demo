@@ -1,6 +1,6 @@
  {
   admin = {
-    admin = ("tz1RjonN5qEJM8cZhKcfGyoEqhw1FNB4ti6w" : address);
+    admin = ("tz1aSkwEot3L2kmUvcoxzjMomb9mvBNuzFK6" : address);
     pending_admin = (None : address option);
     paused = true;
   };
