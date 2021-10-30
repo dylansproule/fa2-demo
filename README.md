@@ -52,7 +52,7 @@ Once complilation has completed, we can originate (deploy) the contract to the t
 # ./originate-rpc-contract.sh
 
 # SANDBOX RPC
-# ./compile-storage.sh
+# ./originate-sandbox-contract.sh
 ```
 
 #### Demo
