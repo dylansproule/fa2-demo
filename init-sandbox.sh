@@ -1,7 +1,8 @@
 #!/bin/sh
+source bash_config.sh
 
 docker run --rm \
-  --name tezos-flextesa \
+  --name $docker_container_name \
   -e flextesa_node_cors_origin='*' \
   -e block_time=1 \
   --detach -p 20000:20000 \

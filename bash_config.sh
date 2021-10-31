@@ -2,6 +2,7 @@
 
 # Docker parameters
 docker_image="tqtezos/flextesa:20211025"
+docker_container_name="tezos-flextesa"
 box_script="hangzbox"
 
 # Contract / Storage parameters

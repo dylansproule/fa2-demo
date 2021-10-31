@@ -47,7 +47,7 @@ def initialize():
         operations.append(contract_.create_token(token_id, {
             "name": name.encode('utf-8'),
             "symbol": symbol.encode('utf-8'),
-            "isTransferable": "true".encode('utf-8'),
+            "isTransferable": "true".encode('utf-8')
         }))
         operations.append(contract_.mint_tokens(
             [
